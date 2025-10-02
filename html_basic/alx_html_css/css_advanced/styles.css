@@ -162,3 +162,34 @@ a {
     height: 40px;
   }
 }
+
+/* Membership Section */
+.membership {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f2f6f9;
+}
+
+.membership h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.membership p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.membership-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.membership-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30
