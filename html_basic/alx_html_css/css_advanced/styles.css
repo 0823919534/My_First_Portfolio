@@ -193,3 +193,46 @@ a {
   background-color: #fff;
   border-radius: 12px;
   padding: 30
+/* Footer Section */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-right ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-right a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-right a:hover {
+  color: #f0a500;
+}
