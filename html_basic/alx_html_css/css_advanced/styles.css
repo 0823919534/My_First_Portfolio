@@ -98,3 +98,49 @@ a {
   border-top: 1px solid #ddd;
   margin-top: 50px;
 }
+/* Videos Section */
+.videos-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f0f4f8;
+}
+
+.videos-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.videos-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.video-card {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.video-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Play button overlay */
+.video-card .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px; /* Adjust size of the play button */
+  height: 50px;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* ensures clicks go to video-card if needed */
+}
