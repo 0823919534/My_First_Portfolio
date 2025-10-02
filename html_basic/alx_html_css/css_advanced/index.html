@@ -1,44 +1,76 @@
-
----
-
-## ✍️ Step 2: Create `index.html`
-
-Inside `css_advanced`, create (or copy) the HTML file from your **HTML Advanced** project.  
-For now, the simplest structure will look like this:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Advanced CSS Project</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Advanced Project — Beverley Tebogo Mokgadi</title>
 
+  <!-- main stylesheet for this project -->
+  <link href="styles.css" rel="stylesheet">
 </head>
-<body>
+<body class="works_on_smartphone">
+
+  <!-- ===== Header ===== -->
   <header>
-    <nav>
-      <img src="images/logo.png" alt="Logo" class="logo">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+    <nav class="nav-inner" aria-label="Main navigation">
+      <div class="brand">
+        <!-- replace with <img src="images/logo.png"> if you prefer the real logo -->
+        <span class="logo-char" aria-hidden="true">🌟</span>
+        <span class="brand-name">Beverley Mokgadi</span>
+      </div>
+
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="#projects">Projects</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- ===== Banner / Hero (Task 2) =====
+       Place banner AFTER the header and BEFORE the main content -->
+  <section class="banner" role="region" aria-label="Hero banner">
+    <div class="banner-inner">
+      <h1 class="banner-title">Build beautiful things with HTML &amp; CSS</h1>
+      <p class="banner-sub">Design-driven frontend examples inspired by the Figma prototype. Translate design to code and make it responsive.</p>
+      <p class="banner-cta">
+        <a class="btn primary" href="#projects">See projects</a>
+        <a class="btn ghost" href="#contact">Contact me</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Main content (article + aside) ===== -->
   <main>
-    <section class="hero">
-      <h1>Welcome to My Advanced Project</h1>
-      <p>Building beautiful pages with HTML and CSS.</p>
-      <img src="images/hero.jpg" alt="Hero Image">
-    </section>
+    <article>
+      <h2 id="projects">Featured Projects</h2>
+      <p>Here you'll find a selection of projects that demonstrate HTML/CSS skills and design implementation.</p>
+
+      <h3>Community Learning</h3>
+      <p>A sample project built to help learners access structured educational content in low-connectivity areas.</p>
+
+      <!-- sample image from the images folder -->
+      <img src="images/Object.png" alt="Sample project screenshot">
+
+      <h3 id="about">About Me</h3>
+      <p>I am a homeschooling mother and aspiring software developer working on community-focused projects.</p>
+
+      <h3 id="contact">Contact</h3>
+      <p>Reach me via <a href="https://github.com/0823919534" target="_blank" rel="noopener">my GitHub</a>.</p>
+    </article>
+
+    <aside>
+      <h2>Quick Info</h2>
+      <p>Placeholder to add a comment thread later.</p>
+      <img src="images/logo.png" alt="small logo" style="max-width:120px; display:block; margin-top:12px;">
+    </aside>
   </main>
 
+  <!-- ===== Footer ===== -->
   <footer>
-    <p>&copy; 2025 Beverley Tebogo Mokgadi</p>
+    <p>Made by Beverley Tebogo Mokgadi - <a href="https://github.com/0823919534" target="_blank" rel="noopener">here</a></p>
   </footer>
+
 </body>
 </html>
